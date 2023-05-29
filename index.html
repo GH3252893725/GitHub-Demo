@@ -12,10 +12,18 @@
     github 仓库的分支 名为: origin/main 不是master
 
     git branch --set-upstream-to=origin/main  // 建立本地的 master的上游分支(追踪分支为 远程的origin/main)
-    
+
     git pull/fetch
 
-    [现在可以本地 master 上游分支直接指向origin/main了吗, 老师那名字不同就不行..]
+    [
+      现在可以本地 master 上游分支直接指向origin/main了吗, 老师那名字不同就不行..
+      不行, 虽然pull可以, 但是push上传时还是会显示 
+
+      To push to the branch of the same name on the remote, use
+
+      git push origin HEAD
+    ]
+
 
     git merge/pull  --allow-unrelated-histories
 
