@@ -33,8 +33,22 @@
 
     2. gitlab的 git 服务器就不展示了(没有该服务器给我们演示), 跟getee和github的类似, 分支也是origin/main, clone下来的也是 main, 除非我们自己搭建的就可能不是(master)
    -->
+   
+
+      <!-- 
+
+    解释一下, 为什么 我们 push 不带任何参数的时候显示要求我们  
+     To push to the branch of the same name on the remote, use
+
+      git push origin HEAD
+
+      首先知道 我们 git push origin master[HEAD]:main 这是完整的push 推送写法
+      我们平常 git push  这样写是用来默认的配置(我们可以修改)
+
+      git checkout master  : 切换回我们原来的 master分支
 
 
+    -->
 
 
 </body>
