@@ -11,7 +11,7 @@
 
     github 仓库的分支 名为: origin/main 不是master
 
-    git branch --set-upstream-to=origin/main  // 建立本地的 master的上游分支(追踪分支为 远程的origin/main)
+    git branch --set-upstream-to=origin/main  // 建立本地的 master的上游分支(追踪分支为 远程的origin/main) [如果这里设置不行的话 就先fetch拿下来到本地分支, 因为我们设置的 origin/main是本地操作, 远程的是用空格 origin main, 所以先fetch下来本地再操作设置这个配置]
 
     git pull/fetch
 
@@ -22,13 +22,14 @@
       To push to the branch of the same name on the remote, use
 
       git push origin HEAD
+      解决方案 : git push origin HEAD:main/
     ]
 
 
     git merge/pull  --allow-unrelated-histories
 
 
-    2. gitlab的 git 服务器就不展示了(没有该服务器给我们演示), 跟getee和github的类似, 分支也是origin/main
+    2. gitlab的 git 服务器就不展示了(没有该服务器给我们演示), 跟getee和github的类似, 分支也是origin/main, clone下来的也是 main, 除非我们自己搭建的就可能不是(master)
    -->
 </body>
 </html>
